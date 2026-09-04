@@ -1,0 +1,16 @@
+{
+  "name": "the-home-watch-agency-luxury-redesign",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Original luxury redesign demo for The Home Watch Agency.",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "check": "node src/check.mjs",
+    "test": "npm run build && npm run check",
+    "serve": "node src/serve.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
