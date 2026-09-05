@@ -90,6 +90,20 @@ const mobileMenuState = await evaluate(`(() => {
 })()`);
 if (!mobileMenuState.opened || !mobileMenuState.closed) failures.push("Mobile navigation did not open and close correctly");
 
+const scrolledMenuState = await evaluate(`(() => {
+  const toggle = document.querySelector("[data-menu-toggle]");
+  const menu = document.querySelector("[data-mobile-menu]");
+  const states = [];
+  [900, 1800, 0].forEach((position) => {
+    window.scrollTo(0, position);
+    window.dispatchEvent(new Event("scroll"));
+    toggle.click(); states.push(!menu.hidden && toggle.getAttribute("aria-expanded") === "true");
+    toggle.click(); states.push(menu.hidden && toggle.getAttribute("aria-expanded") === "false");
+  });
+  return states.every(Boolean);
+})()`);
+if (!scrolledMenuState) failures.push("Mobile navigation did not open and close consistently across scroll states");
+
 await command("Emulation.setDeviceMetricsOverride", { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
 activeRoute = "desktop navigation";
 await command("Page.navigate", { url: "http://127.0.0.1:4173/" });
