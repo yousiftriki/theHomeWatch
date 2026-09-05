@@ -28,25 +28,30 @@ The redesign positions The Home Watch Agency between editorial architecture, pri
 - Existing service scope, pricing policy, FAQ topics and answers, service areas, contact details, and trust/experience claims.
 - Protected presentation boundaries: no password or protected content is stored locally.
 
-## Images still requiring client-supplied or professionally licensed replacements
+## Generated imagery currently in use
 
-All files below are optimized local WebP concept placeholders generated for this demo. They are not represented as actual client properties or documentary evidence.
+The refreshed collection supplied for the demo is normalized to descriptive filenames and optimized local WebP assets. These images are presented as generated architectural concepts—not actual client properties or documentary proof of services. Confirm final approval or replace with professionally licensed photography before production.
 
-| Current placeholder | Intended final asset |
+| Current concept asset | Primary visual role |
 | --- | --- |
-| `assets/images/generated/arizona-luxury-estate-hero.webp` | Luxury Arizona estate exterior hero with copy-safe negative space |
-| `assets/images/generated/luxury-estate-interior.webp` | Licensed Scottsdale / Paradise Valley luxury interior |
-| `assets/images/generated/paradise-valley-estate.webp` | Service-area desert landscape and pool / terrace panorama |
-| `assets/images/generated/scottsdale-home-watch.webp` | Authentic home-watch inspection / detail photography, with client and property permission |
-| `assets/images/generated/vehicle-management.webp` | Licensed or client-approved private-garage / vehicle-care image |
-| `assets/images/generated/private-concierge.webp` | Licensed concierge / arrival-preparation lifestyle image |
+| `assets/images/generated/arizona-luxury-estate-hero.webp` | Contact and alternate estate imagery |
+| `assets/images/generated/arizona-luxury-estate-sunset.webp` | Homepage hero and private presentation atmosphere |
+| `assets/images/generated/arizona-estate-arrival-palms.webp` | About, estate-management, and consultation imagery |
+| `assets/images/generated/fountain-hills-estate-overlook.webp` | Service-area, concierge, and client-offer imagery |
+| `assets/images/generated/fountain-hills-luxury-estate.webp` | Service-area and editorial imagery |
+| `assets/images/generated/paradise-valley-estate-arrival.webp` | Introductory, home-watch, and arriving-soon imagery |
+| `assets/images/generated/paradise-valley-estate-pool.webp` | Services and estate-management imagery |
+| `assets/images/generated/private-estate-gated-entry.webp` | Home-watch and security-oriented imagery |
+| `assets/images/generated/scottsdale-estate-driveway.webp` | Vehicle-services imagery using the visible garage/arrival context |
+| `assets/images/generated/scottsdale-estate-entry.webp` | Pricing and FAQ imagery |
+| `assets/images/generated/scottsdale-estate-pool-sunset.webp` | Concierge, lifestyle, and editorial imagery |
 
 Recommended additional authentic assets before production:
 
 - Individual professional portraits of Christine and Andrew; the demo currently uses the authentic family image from the live site.
 - Authentic, consented documentary photography of an inspection, exterior/perimeter check, vendor coordination, and vehicle-care process.
 - A real reporting-app screenshot with private information fully redacted, if contractually permitted.
-- Current high-resolution vector/SVG logo artwork and current vector versions of affiliation marks.
+- Current vector/SVG logo artwork and current vector versions of affiliation marks; the refreshed transparent PNG logo is used in the demo.
 - Confirmed-license replacements for any current-site stock imagery retained in the GPS section.
 
 ## Questionable content / functionality intentionally left untouched
@@ -76,7 +81,7 @@ Recommended additional authentic assets before production:
 - Migrate the approved design into the actual production WordPress/Thrive repository or supply the missing repository for direct integration.
 - Reconnect the client-presentation password flow within the final hosting environment.
 - Confirm all credentials, affiliations, insurance/bonding statements, regulated service scopes, and image licenses.
-- Replace the six generated concept images and any legacy stock/reporting artwork selected for production.
+- Confirm final approval for the generated architectural collection, add authentic service-detail photography where appropriate, and replace any legacy stock/reporting artwork selected for production.
 - Add the client’s approved analytics configuration and perform a final production-domain accessibility and Core Web Vitals audit.
 
 ## Preview

@@ -52,8 +52,10 @@ for (const route of routes) {
 }
 
 const imagePaths = [
-  "arizona-luxury-estate-hero.webp", "luxury-estate-interior.webp", "paradise-valley-estate.webp",
-  "private-concierge.webp", "scottsdale-home-watch.webp", "vehicle-management.webp",
+  "arizona-luxury-estate-hero.webp", "arizona-luxury-estate-sunset.webp", "arizona-estate-arrival-palms.webp",
+  "fountain-hills-estate-overlook.webp", "fountain-hills-luxury-estate.webp", "paradise-valley-estate-arrival.webp",
+  "paradise-valley-estate-pool.webp", "private-estate-gated-entry.webp", "scottsdale-estate-driveway.webp",
+  "scottsdale-estate-entry.webp", "scottsdale-estate-pool-sunset.webp",
 ];
 for (const image of imagePaths) {
   const info = await stat(path.join(distRoot, "assets/images/generated", image));

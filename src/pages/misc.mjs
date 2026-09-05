@@ -33,8 +33,8 @@ export function pricingPage() {
       eyebrow: "Service Plans",
       title: "Options, Frequency & Pricing",
       intro: "No long-term contracts. Only pay for what you use.",
-      image: "/assets/images/generated/luxury-estate-interior.webp",
-      alt: "Temporary editorial placeholder of a refined Arizona estate interior",
+      image: "/assets/images/generated/scottsdale-estate-entry.webp",
+      alt: "Generated concept image of a refined Scottsdale estate entrance",
     })}
     <section class="pricing-intro">
       <div class="wrap pricing-intro__grid">
@@ -74,7 +74,7 @@ export function pricingPage() {
     path: "/pricing/",
     body,
     overlayHeader: true,
-    preloadImage: "/assets/images/generated/luxury-estate-interior.webp",
+    preloadImage: "/assets/images/generated/scottsdale-estate-entry.webp",
   });
 }
 
@@ -85,7 +85,7 @@ export function contactPage() {
       title: "Contact Us",
       intro: "Regardless of the need, we will help find the solution.",
       image: "/assets/images/generated/arizona-luxury-estate-hero.webp",
-      alt: "Temporary editorial placeholder of a contemporary Arizona desert estate at blue hour",
+      alt: "Generated concept image of a contemporary Arizona desert estate at blue hour",
       compact: true,
     })}
     <section class="contact-section">
@@ -135,8 +135,8 @@ export function clientOffersPage() {
       eyebrow: "Client Service Offers",
       title: "Our Services",
       intro: "A proactive approach can eliminate the need for costly and untimely repairs in the future.",
-      image: "/assets/images/generated/paradise-valley-estate.webp",
-      alt: "Temporary editorial placeholder of a serene Sonoran Desert residence pool terrace",
+      image: "/assets/images/generated/fountain-hills-estate-overlook.webp",
+      alt: "Generated concept image of a serene Fountain Hills estate overlooking the desert",
     })}
     <section class="presentation-index"><div class="wrap">
       ${sectionHeading({ eyebrow: "Service Details & Presentations", title: "A complete view of our client offering.", intro: "The presentation routes remain private and continue to require access through the current production website." })}
@@ -151,7 +151,7 @@ export function clientOffersPage() {
     path: "/client-services-offers/",
     body,
     overlayHeader: true,
-    preloadImage: "/assets/images/generated/paradise-valley-estate.webp",
+    preloadImage: "/assets/images/generated/fountain-hills-estate-overlook.webp",
   });
 }
 
@@ -159,7 +159,7 @@ export function presentationPage({ path, title, servicePath }) {
   const productionUrl = `https://thehomewatchagency.com${path}`;
   const body = `
     <section class="private-gate">
-      <img src="/assets/images/generated/arizona-luxury-estate-hero.webp" width="1798" height="875" alt="" />
+      <img src="/assets/images/generated/arizona-luxury-estate-sunset.webp" width="1448" height="1086" alt="" />
       <div class="private-gate__veil"></div>
       <div class="private-gate__card">
         <span class="eyebrow eyebrow--light">Private Client Access</span>
@@ -190,8 +190,8 @@ export function blogPage() {
       eyebrow: "From the Agency",
       title: "Blog",
       intro: "The current public site does not list published articles at this time.",
-      image: "/assets/images/generated/paradise-valley-estate.webp",
-      alt: "Temporary editorial placeholder of the Sonoran Desert beyond a luxury residence pool terrace",
+      image: "/assets/images/generated/fountain-hills-luxury-estate.webp",
+      alt: "Generated concept image of the Sonoran Desert beyond a Fountain Hills estate pool",
       compact: true,
     })}
     <section class="empty-editorial"><div class="wrap" data-reveal><span class="eyebrow">Home Watch Notes</span><h2>Thoughtful guidance,<br /><em>arriving soon.</em></h2><p>This route is preserved for future content. No articles or claims have been invented for the redesign demo.</p>${button("Explore Frequently Asked Questions", "/faqs/", "outline")}</div></section>
@@ -203,12 +203,12 @@ export function blogPage() {
     path: "/blog/",
     body,
     overlayHeader: true,
-    preloadImage: "/assets/images/generated/paradise-valley-estate.webp",
+    preloadImage: "/assets/images/generated/fountain-hills-luxury-estate.webp",
   });
 }
 
 export function arrivingSoonPage() {
-  const body = `<section class="private-gate private-gate--light"><img src="/assets/images/generated/luxury-estate-interior.webp" width="1536" height="1024" alt="Temporary editorial placeholder of a contemporary Arizona estate interior" /><div class="private-gate__veil"></div><div class="private-gate__card"><span class="eyebrow eyebrow--light">The Home Watch Agency</span><h1>Arriving Soon</h1><p>This existing route is preserved. Continue to the redesigned homepage or schedule a consultation directly.</p><div class="private-gate__links"><a href="/">Return Home</a><a href="/contact/">Schedule a Consultation</a></div></div></section>`;
+  const body = `<section class="private-gate private-gate--light"><img src="/assets/images/generated/paradise-valley-estate-arrival.webp" width="1448" height="1086" alt="Generated concept image of a contemporary Paradise Valley estate arrival" /><div class="private-gate__veil"></div><div class="private-gate__card"><span class="eyebrow eyebrow--light">The Home Watch Agency</span><h1>Arriving Soon</h1><p>This existing route is preserved. Continue to the redesigned homepage or schedule a consultation directly.</p><div class="private-gate__links"><a href="/">Return Home</a><a href="/contact/">Schedule a Consultation</a></div></div></section>`;
   return htmlDocument({
     title: "Arriving Soon — The Home Watch Agency",
     description: "Arriving soon at The Home Watch Agency.",

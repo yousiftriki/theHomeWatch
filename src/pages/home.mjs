@@ -10,7 +10,7 @@ import {
 export function homePage() {
   const body = `
     <section class="home-hero">
-      <img class="home-hero__image" src="/assets/images/generated/arizona-luxury-estate-hero.webp" width="1798" height="875" alt="Temporary editorial placeholder of a contemporary Arizona desert estate at blue hour" fetchpriority="high" />
+      <img class="home-hero__image" src="/assets/images/generated/arizona-luxury-estate-sunset.webp" width="1448" height="1086" alt="Generated concept image of a contemporary Arizona desert estate and pool at sunset" fetchpriority="high" />
       <div class="home-hero__veil"></div>
       <div class="home-hero__content wrap">
         <span class="eyebrow eyebrow--light">Luxury Home Watch · Estate Management · Vehicle Care · Concierge</span>
@@ -38,7 +38,7 @@ export function homePage() {
         </div>
       </div>
       <div class="intro-editorial__image image-frame" data-reveal>
-        <img src="/assets/images/generated/luxury-estate-interior.webp" width="1536" height="1024" alt="Temporary editorial placeholder of a contemporary Arizona estate interior" loading="lazy" />
+        <img src="/assets/images/generated/paradise-valley-estate-arrival.webp" width="1448" height="1086" alt="Generated concept image of a contemporary Paradise Valley estate arrival" loading="lazy" />
         <span class="image-note">Concept imagery · replace with licensed final photography</span>
       </div>
     </section>
@@ -56,7 +56,7 @@ export function homePage() {
 
     <section class="model-editorial">
       <div class="model-editorial__media image-frame" data-reveal>
-        <img src="/assets/images/generated/scottsdale-home-watch.webp" width="1536" height="1024" alt="Temporary conceptual placeholder of home-watch monitoring tools" loading="lazy" />
+        <img src="/assets/images/generated/private-estate-gated-entry.webp" width="1448" height="1086" alt="Generated concept image of a secure gated Arizona estate arrival" loading="lazy" />
       </div>
       <div class="model-editorial__content" data-reveal>
         <span class="eyebrow">Our Service Model</span>
@@ -85,7 +85,7 @@ export function homePage() {
     </section>
 
     <section class="service-area">
-      <img src="/assets/images/generated/paradise-valley-estate.webp" width="1800" height="788" alt="Temporary editorial placeholder of a serene Sonoran Desert pool terrace" loading="lazy" />
+      <img src="/assets/images/generated/fountain-hills-estate-overlook.webp" width="1448" height="1086" alt="Generated concept image of a Fountain Hills estate overlooking the Sonoran Desert" loading="lazy" />
       <div class="service-area__veil"></div>
       <div class="service-area__content wrap" data-reveal>
         <span class="eyebrow eyebrow--light">Our Clients &amp; Areas of Service</span>
@@ -125,6 +125,6 @@ export function homePage() {
     path: "/",
     body,
     overlayHeader: true,
-    preloadImage: "/assets/images/generated/arizona-luxury-estate-hero.webp",
+    preloadImage: "/assets/images/generated/arizona-luxury-estate-sunset.webp",
   });
 }

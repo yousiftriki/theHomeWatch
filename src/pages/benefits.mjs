@@ -76,8 +76,8 @@ export function benefitsPage() {
       eyebrow: "Why Home Watch",
       title: "Benefits of Engaging<br />The Home Watch Agency",
       intro: "Execution, exemplary service, accountability, attention to detail, and detailed reporting—with our clients’ best interests always in mind.",
-      image: "/assets/images/generated/scottsdale-home-watch.webp",
-      alt: "Temporary conceptual placeholder of home-watch monitoring tools in an Arizona residence",
+      image: "/assets/images/generated/private-estate-gated-entry.webp",
+      alt: "Generated concept image of a private gated Arizona estate at sunset",
       align: "center",
     })}
 
@@ -136,6 +136,6 @@ export function benefitsPage() {
     path: "/benefits/",
     body,
     overlayHeader: true,
-    preloadImage: "/assets/images/generated/scottsdale-home-watch.webp",
+    preloadImage: "/assets/images/generated/private-estate-gated-entry.webp",
   });
 }

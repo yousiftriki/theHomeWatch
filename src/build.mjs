@@ -55,7 +55,7 @@ const pages = new Map([
 const assets = [
   "styles.css",
   "site.js",
-  "images/authentic/thwa-logo.jpg",
+  "images/authentic/thwa-logo.png",
   "images/authentic/thwa-favicon.png",
   "images/authentic/principals-rocky-point.webp",
   "images/authentic/gps-client-reporting.webp",
@@ -64,11 +64,16 @@ const assets = [
   "images/authentic/ihwa.jpeg",
   "images/authentic/scottsdale-affiliation.png",
   "images/generated/arizona-luxury-estate-hero.webp",
-  "images/generated/luxury-estate-interior.webp",
-  "images/generated/paradise-valley-estate.webp",
-  "images/generated/private-concierge.webp",
-  "images/generated/scottsdale-home-watch.webp",
-  "images/generated/vehicle-management.webp",
+  "images/generated/arizona-luxury-estate-sunset.webp",
+  "images/generated/arizona-estate-arrival-palms.webp",
+  "images/generated/fountain-hills-estate-overlook.webp",
+  "images/generated/fountain-hills-luxury-estate.webp",
+  "images/generated/paradise-valley-estate-arrival.webp",
+  "images/generated/paradise-valley-estate-pool.webp",
+  "images/generated/private-estate-gated-entry.webp",
+  "images/generated/scottsdale-estate-driveway.webp",
+  "images/generated/scottsdale-estate-entry.webp",
+  "images/generated/scottsdale-estate-pool-sunset.webp",
 ];
 
 async function writePage(route, html) {

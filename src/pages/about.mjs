@@ -13,8 +13,8 @@ export function aboutPage() {
       eyebrow: "The Agency",
       title: "About The Home Watch Agency",
       intro: "Our philosophy, relationships, story, clientele, and commitment to professional development.",
-      image: "/assets/images/generated/luxury-estate-interior.webp",
-      alt: "Temporary editorial placeholder of a refined contemporary Arizona estate interior",
+      image: "/assets/images/generated/arizona-estate-arrival-palms.webp",
+      alt: "Generated concept image of a refined Arizona estate arrival framed by palms",
       align: "center",
     })}
 
@@ -64,7 +64,7 @@ export function aboutPage() {
 
     <section class="areas-editorial" id="clients">
       <div class="areas-editorial__image">
-        <img src="/assets/images/generated/paradise-valley-estate.webp" width="1800" height="788" alt="Temporary editorial placeholder of a Sonoran Desert estate pool terrace" loading="lazy" />
+        <img src="/assets/images/generated/fountain-hills-luxury-estate.webp" width="1448" height="1086" alt="Generated concept image of a Fountain Hills luxury estate and desert overlook" loading="lazy" />
       </div>
       <div class="wrap areas-editorial__content">
         <div data-reveal>
@@ -101,8 +101,8 @@ export function aboutPage() {
     })}
 
     ${imageBreak({
-      src: "/assets/images/generated/arizona-luxury-estate-hero.webp",
-      alt: "Temporary editorial placeholder of a contemporary Arizona desert estate at dusk",
+      src: "/assets/images/generated/scottsdale-estate-pool-sunset.webp",
+      alt: "Generated concept image of a Scottsdale estate pool and mountain sunset",
       caption: "Concept imagery · replace with professionally licensed or approved final photography",
       position: "center",
     })}
@@ -161,6 +161,6 @@ export function aboutPage() {
     path: "/about/",
     body,
     overlayHeader: true,
-    preloadImage: "/assets/images/generated/luxury-estate-interior.webp",
+    preloadImage: "/assets/images/generated/arizona-estate-arrival-palms.webp",
   });
 }

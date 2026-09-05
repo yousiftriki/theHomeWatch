@@ -16,8 +16,8 @@ export const services = [
     title: "Home Watch Monitoring",
     shortTitle: "Home Watch",
     href: "/services/basic/",
-    image: "/assets/images/generated/scottsdale-home-watch.webp",
-    alt: "Temporary editorial placeholder of home-monitoring tools in a refined Arizona residence",
+    image: "/assets/images/generated/private-estate-gated-entry.webp",
+    alt: "Generated concept image of the gated arrival to a luxury Arizona residence",
     text: "Each visit entails a comprehensive assessment of the interior, exterior, and perimeter of the property to help ensure that your residence and vehicles are secure and appropriately monitored, maintained, exercised, and ready for your return.",
   },
   {
@@ -25,8 +25,8 @@ export const services = [
     title: "Home / Estate Management",
     shortTitle: "Estate Management",
     href: "/services/personalized/",
-    image: "/assets/images/generated/luxury-estate-interior.webp",
-    alt: "Temporary editorial placeholder of a quiet contemporary Arizona estate interior",
+    image: "/assets/images/generated/paradise-valley-estate-pool.webp",
+    alt: "Generated concept image of a Paradise Valley estate and pool at sunset",
     text: "A nimble and comprehensive suite of supplementary Personalized Home/Estate Management Services to appropriately manage, maintain, and care for your residence and the surrounding grounds.",
   },
   {
@@ -34,8 +34,8 @@ export const services = [
     title: "Vehicle Services",
     shortTitle: "Vehicle Care",
     href: "/services/vehicle/",
-    image: "/assets/images/generated/vehicle-management.webp",
-    alt: "Temporary editorial placeholder of covered vehicles in a private Arizona residence garage",
+    image: "/assets/images/generated/scottsdale-estate-driveway.webp",
+    alt: "Generated concept image of an illuminated Scottsdale estate driveway and garage",
     text: "Our services don’t end with your home. We assist with vehicle maintenance, exercising, valet, shipping, and brokerage, including luxury cars, exotics, motorcycles, off-road vehicles, golf carts, and boats.",
   },
   {
@@ -43,8 +43,8 @@ export const services = [
     title: "Personalized Concierge Services",
     shortTitle: "Concierge",
     href: "/services/concierge/",
-    image: "/assets/images/generated/private-concierge.webp",
-    alt: "Temporary editorial placeholder of arrival-preparation details in a luxury Arizona home",
+    image: "/assets/images/generated/scottsdale-estate-pool-sunset.webp",
+    alt: "Generated concept image of a resort-like Scottsdale estate pool at sunset",
     text: "For clients whose needs extend beyond Basic Home Watch and Estate/Vehicle Management, we offer an agile suite of personalized Concierge Services. Regardless of the need, we will help find the solution.",
   },
 ];
@@ -116,7 +116,7 @@ export function header({ overlay = false } = {}) {
   <header class="site-header${overlay ? " site-header--overlay" : ""}" data-site-header>
     <div class="site-header__inner">
       <a class="brand" href="/" aria-label="The Home Watch Agency home">
-        <img src="/assets/images/authentic/thwa-logo.jpg" width="600" height="140" alt="The Home Watch Agency" />
+        <img src="/assets/images/authentic/thwa-logo.png" width="2172" height="724" alt="The Home Watch Agency" />
       </a>
       <nav class="desktop-nav" aria-label="Primary navigation">
         <a class="nav-link" href="/">Home</a>
@@ -172,7 +172,7 @@ export function footer() {
     </div>
     <div class="site-footer__grid">
       <div class="site-footer__brand">
-        <a class="brand brand--footer" href="/"><img src="/assets/images/authentic/thwa-logo.jpg" width="600" height="140" alt="The Home Watch Agency" loading="lazy" /></a>
+        <a class="brand brand--footer" href="/"><img src="/assets/images/authentic/thwa-logo.png" width="2172" height="724" alt="The Home Watch Agency" loading="lazy" /></a>
         <p>Comprehensive Home Watch Services, Personalized Concierge Services, Vehicle Care Services, and Estate Management.</p>
         <address>${contact.city}<br /><a href="${phoneHref}">${contact.phone}</a><br /><a href="${emailHref}">${contact.email}</a></address>
       </div>
@@ -236,7 +236,7 @@ export function trustBand() {
 
 export function consultationCta() {
   return `<section class="consultation-cta">
-    <div class="consultation-cta__image"><img src="/assets/images/generated/private-concierge.webp" width="1536" height="1024" alt="Temporary editorial placeholder of a prepared Arizona residence" loading="lazy" /></div>
+    <div class="consultation-cta__image"><img src="/assets/images/generated/arizona-estate-arrival-palms.webp" width="1448" height="1086" alt="Generated concept image of a warmly illuminated Arizona estate arrival" loading="lazy" /></div>
     <div class="consultation-cta__copy" data-reveal><span class="eyebrow">Thank you</span><h2>We look forward to hearing from you.</h2><p>Thank you in advance for your consideration of The Home Watch Agency as a trusted partner to assist with the care and responsibility for some of your most precious and personal investments.</p>${button("Schedule Your Consultation", "/contact/")}</div>
   </section>`;
 }

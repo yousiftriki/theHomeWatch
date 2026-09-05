@@ -21,8 +21,8 @@ export function servicesPage() {
       eyebrow: "Private Property Care",
       title: "Our Services",
       intro: "A proactive approach can eliminate the need for costly and untimely repairs in the future.",
-      image: "/assets/images/generated/arizona-luxury-estate-hero.webp",
-      alt: "Temporary editorial placeholder of a contemporary Arizona desert estate at dusk",
+      image: "/assets/images/generated/paradise-valley-estate-pool.webp",
+      alt: "Generated concept image of a contemporary Paradise Valley estate and pool at sunset",
     })}
     ${servicesNavigation()}
     <section class="services-overview" id="overview">
@@ -51,7 +51,7 @@ export function servicesPage() {
     path: "/services/",
     body,
     overlayHeader: true,
-    preloadImage: "/assets/images/generated/arizona-luxury-estate-hero.webp",
+    preloadImage: "/assets/images/generated/paradise-valley-estate-pool.webp",
   });
 }
 
@@ -93,8 +93,8 @@ export function basicServicePage() {
     eyebrow: "Basic Home Watch",
     title: "Home Watch Monitoring Services",
     intro: "Our Home Watch Monitoring service can be the difference between minor damage and a major disaster.",
-    image: "/assets/images/generated/scottsdale-home-watch.webp",
-    alt: "Temporary conceptual placeholder of tools used for a detailed home-watch visit",
+    image: "/assets/images/generated/private-estate-gated-entry.webp",
+    alt: "Generated concept image of a secure gated Arizona estate arrival",
     leadTitle: "We act as your eyes & ears while you are away.",
     note: "Each client and residence is unique. A Customized Care Plan is assembled for the property, needs, complexity, and client preferences.",
     paragraphs: [
@@ -104,8 +104,8 @@ export function basicServicePage() {
       "Each visit entails a detailed visual assessment of the interior, exterior, and perimeter of the property to help ensure that your residence and vehicles are secure and being appropriately monitored, maintained, exercised, and ready for your return. Each visit can be fully documented with details and photographs related to critical areas, components, and client preferences.",
     ],
     breakImage: {
-      src: "/assets/images/generated/luxury-estate-interior.webp",
-      alt: "Temporary editorial placeholder of a refined Arizona estate interior",
+      src: "/assets/images/generated/paradise-valley-estate-arrival.webp",
+      alt: "Generated concept image of a carefully illuminated Paradise Valley estate arrival",
       caption: "Concept imagery · not documentary evidence of a client property or service visit",
       position: "center",
     },
@@ -136,8 +136,8 @@ export function personalizedServicePage() {
     eyebrow: "Supplementary · À La Carte",
     title: "Home / Estate Management Services",
     intro: "Personalized supplementary services and white-glove care that go beyond Basic Home Watch Monitoring.",
-    image: "/assets/images/generated/luxury-estate-interior.webp",
-    alt: "Temporary editorial placeholder of a carefully maintained contemporary Arizona estate interior",
+    image: "/assets/images/generated/arizona-estate-arrival-palms.webp",
+    alt: "Generated concept image of a carefully maintained Arizona estate arrival",
     leadTitle: "White-glove service that goes beyond.",
     note: "We strive to assist our clients with almost any request as long as it is not Illegal, Immoral, or Unethical.",
     paragraphs: [
@@ -146,8 +146,8 @@ export function personalizedServicePage() {
       "The following are commonly requested services that can often be combined with a Home Watch visit or performed at separate off-cycle times as needed and requested.",
     ],
     breakImage: {
-      src: "/assets/images/generated/private-concierge.webp",
-      alt: "Temporary editorial placeholder of groceries, flowers, and arrival details prepared in an Arizona residence",
+      src: "/assets/images/generated/scottsdale-estate-pool-sunset.webp",
+      alt: "Generated concept image of a resort-like Scottsdale estate prepared for sunset",
       caption: "Concept imagery · replace with professionally licensed final lifestyle photography",
       position: "center",
     },
@@ -176,8 +176,8 @@ export function vehicleServicePage() {
     eyebrow: "Private Vehicle Care",
     title: "Vehicle Services",
     intro: "Maintenance, exercising, valet, shipping, and brokerage support for vehicles that remain in the desert while you are away.",
-    image: "/assets/images/generated/vehicle-management.webp",
-    alt: "Temporary editorial placeholder of covered vehicles cared for inside a private Arizona garage",
+    image: "/assets/images/generated/scottsdale-estate-driveway.webp",
+    alt: "Generated concept image of an illuminated Scottsdale estate driveway and garage",
     leadTitle: "Our services don’t end with your home.",
     note: "Keeping your vehicles properly maintained, charged, and exercised is critical in the desert.",
     paragraphs: [
@@ -203,8 +203,8 @@ export function conciergeServicePage() {
     eyebrow: "An “Ask Anything” Approach",
     title: "Personalized Concierge Services",
     intro: "Leave the “To-Do” lists to us. Regardless of the need, we will help find the solution.",
-    image: "/assets/images/generated/private-concierge.webp",
-    alt: "Temporary editorial placeholder of personalized arrival-preparation details in an Arizona residence",
+    image: "/assets/images/generated/fountain-hills-estate-overlook.webp",
+    alt: "Generated concept image of a Fountain Hills estate prepared for a sunset arrival",
     leadTitle: "Personal affairs, handled with care.",
     note: "Services are tailored to our clients’ needs and can range from simple shopping to helping coordinate a major renovation.",
     paragraphs: [

@@ -131,8 +131,8 @@ export function faqPage() {
       eyebrow: "Answers & Guidance",
       title: "Frequently Asked Questions",
       intro: "Clear answers to the concerns seasonal and absentee homeowners most often bring to The Home Watch Agency.",
-      image: "/assets/images/generated/paradise-valley-estate.webp",
-      alt: "Temporary editorial placeholder of a quiet Sonoran Desert pool terrace",
+      image: "/assets/images/generated/scottsdale-estate-entry.webp",
+      alt: "Generated concept image of a quiet Scottsdale estate entrance at sunset",
       align: "center",
     })}
     <section class="concerns-section">
@@ -158,6 +158,6 @@ export function faqPage() {
     path: "/faqs/",
     body,
     overlayHeader: true,
-    preloadImage: "/assets/images/generated/paradise-valley-estate.webp",
+    preloadImage: "/assets/images/generated/scottsdale-estate-entry.webp",
   });
 }
