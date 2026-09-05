@@ -115,7 +115,7 @@ export function header({ overlay = false } = {}) {
   return `<a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header${overlay ? " site-header--overlay" : ""}" data-site-header>
     <div class="site-header__inner">
-      <a class="brand" href="/" aria-label="The Home Watch Agency home">
+      <a class="brand header-logo" href="/" aria-label="The Home Watch Agency home">
         <img class="brand-logo brand-logo--dark" src="/assets/images/authentic/thwa-logo.png" width="2172" height="724" alt="The Home Watch Agency" />
         <img class="brand-logo brand-logo--light" src="/assets/images/authentic/thwa-white-logo.png" width="2172" height="724" alt="" aria-hidden="true" />
       </a>
