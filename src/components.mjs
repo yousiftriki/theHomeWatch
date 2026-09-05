@@ -25,8 +25,8 @@ export const services = [
     title: "Home / Estate Management",
     shortTitle: "Estate Management",
     href: "/services/personalized/",
-    image: "/assets/images/generated/paradise-valley-estate-pool.webp",
-    alt: "Generated concept image of a Paradise Valley estate and pool at sunset",
+    image: "/assets/images/generated/gallery-arizona-great-room.webp",
+    alt: "Generated concept image of an Arizona great room with mountain views",
     text: "A nimble and comprehensive suite of supplementary Personalized Home/Estate Management Services to appropriately manage, maintain, and care for your residence and the surrounding grounds.",
   },
   {
@@ -43,8 +43,8 @@ export const services = [
     title: "Personalized Concierge Services",
     shortTitle: "Concierge",
     href: "/services/concierge/",
-    image: "/assets/images/generated/scottsdale-estate-pool-sunset.webp",
-    alt: "Generated concept image of a resort-like Scottsdale estate pool at sunset",
+    image: "/assets/images/generated/gallery-arizona-bathroom.webp",
+    alt: "Generated concept image of a limestone spa bathroom with a desert outlook",
     text: "For clients whose needs extend beyond Basic Home Watch and Estate/Vehicle Management, we offer an agile suite of personalized Concierge Services. Regardless of the need, we will help find the solution.",
   },
 ];
@@ -261,10 +261,13 @@ export function galleryCarousel() {
     ["gallery-arizona-great-room.webp", "An open Arizona great room with floor-to-ceiling mountain views", "Great room / mountain outlook"],
     ["gallery-arizona-bathroom.webp", "A limestone spa bathroom overlooking the Sonoran landscape", "Bath / quiet retreat"],
     ["gallery-arizona-bedroom.webp", "A serene Arizona bedroom with a desert mountain view", "Bedroom / desert light"],
+    ["paradise-valley-estate-pool.webp", "A Paradise Valley estate framed by a quiet pool terrace", "Paradise Valley / pool terrace"],
+    ["fountain-hills-estate-overlook.webp", "A Fountain Hills residence set against the Sonoran Desert", "Fountain Hills / desert outlook"],
+    ["scottsdale-estate-pool-sunset.webp", "A Scottsdale estate pool glowing at the end of the day", "Scottsdale / evening arrival"],
   ];
   return `<section class="gallery-section" aria-labelledby="gallery-heading">
     <div class="wrap">
-      <div class="gallery-section__heading" data-reveal><div><span class="eyebrow eyebrow--light">Gallery</span><h2 id="gallery-heading">Spaces with a sense of place.</h2></div><p>Generated concept imagery for the interiors and settings surrounding an Arizona residence.</p></div>
+        <div class="gallery-section__heading" data-reveal><div><span class="eyebrow eyebrow--light">Gallery</span><h2 id="gallery-heading">Spaces with a sense of place.</h2></div><p>Generated concept imagery for the interiors, arrivals, and settings surrounding an Arizona residence.</p></div>
       <div class="gallery-carousel" data-gallery>
         <div class="gallery-carousel__viewport" data-gallery-viewport tabindex="0" aria-label="Arizona residence gallery">
           <div class="gallery-carousel__track">${slides.map(([file, alt, caption], index) => `<figure class="gallery-slide" data-gallery-slide><img src="/assets/images/generated/${file}" width="1448" height="1086" alt="${alt}" loading="lazy" /><figcaption><span>${String(index + 1).padStart(2, "0")}</span>${caption}</figcaption></figure>`).join("")}</div>

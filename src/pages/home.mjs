@@ -39,7 +39,7 @@ export function homePage() {
         </div>
       </div>
       <div class="intro-editorial__image image-frame" data-reveal>
-        <img src="/assets/images/generated/paradise-valley-estate-arrival.webp" width="1448" height="1086" alt="Generated concept image of a contemporary Paradise Valley estate arrival" loading="lazy" />
+        <img src="/assets/images/generated/gallery-arizona-great-room.webp" width="1448" height="1086" alt="Generated concept image of an Arizona great room with floor-to-ceiling mountain views" loading="lazy" />
         <span class="image-note">Concept imagery · replace with licensed final photography</span>
       </div>
     </section>
@@ -59,7 +59,7 @@ export function homePage() {
 
     <section class="model-editorial">
       <div class="model-editorial__media image-frame" data-reveal>
-        <img src="/assets/images/generated/private-estate-gated-entry.webp" width="1448" height="1086" alt="Generated concept image of a secure gated Arizona estate arrival" loading="lazy" />
+        <img src="/assets/images/generated/gallery-arizona-bedroom.webp" width="1448" height="1086" alt="Generated concept image of a serene Arizona bedroom with a desert mountain view" loading="lazy" />
       </div>
       <div class="model-editorial__content" data-reveal>
         <span class="eyebrow">Our Service Model</span>

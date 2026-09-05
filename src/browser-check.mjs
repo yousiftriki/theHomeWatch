@@ -123,11 +123,11 @@ const galleryState = await evaluate(`(() => {
   const next = gallery?.querySelector("[data-gallery-next]");
   return { present: Boolean(gallery && viewport && next), slides: slides?.length || 0, initial: gallery?.querySelector("[data-gallery-status]")?.textContent };
 })()`);
-if (!galleryState.present || galleryState.slides !== 3 || galleryState.initial !== "01 / 03") failures.push("Gallery carousel structure or initial status is incorrect");
+if (!galleryState.present || galleryState.slides !== 6 || galleryState.initial !== "01 / 06") failures.push("Gallery carousel structure or initial status is incorrect");
 await evaluate(`document.querySelector("[data-gallery-next]")?.click(); true`);
 await new Promise((resolve) => setTimeout(resolve, 700));
 const galleryAfterNext = await evaluate(`document.querySelector("[data-gallery-status]")?.textContent`);
-if (galleryAfterNext !== "02 / 03") failures.push(`Gallery next control did not advance (status: ${galleryAfterNext})`);
+if (galleryAfterNext !== "02 / 06") failures.push(`Gallery next control did not advance (status: ${galleryAfterNext})`);
 
 socket.close();
 if (runtimeErrors.length) failures.push(...runtimeErrors);
