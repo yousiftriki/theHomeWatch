@@ -74,6 +74,9 @@ const assets = [
   "images/generated/scottsdale-estate-driveway.webp",
   "images/generated/scottsdale-estate-entry.webp",
   "images/generated/scottsdale-estate-pool-sunset.webp",
+  "images/generated/gallery-arizona-great-room.webp",
+  "images/generated/gallery-arizona-bathroom.webp",
+  "images/generated/gallery-arizona-bedroom.webp",
 ];
 
 async function writePage(route, html) {

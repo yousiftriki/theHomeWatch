@@ -256,6 +256,25 @@ export function imageBreak({ src, alt, caption = "", position = "center" }) {
   return `<figure class="image-break" style="--image-position:${position}" data-reveal><img src="${src}" width="1800" height="1000" alt="${alt}" loading="lazy" />${caption ? `<figcaption>${caption}</figcaption>` : ""}</figure>`;
 }
 
+export function galleryCarousel() {
+  const slides = [
+    ["gallery-arizona-great-room.webp", "An open Arizona great room with floor-to-ceiling mountain views", "Great room / mountain outlook"],
+    ["gallery-arizona-bathroom.webp", "A limestone spa bathroom overlooking the Sonoran landscape", "Bath / quiet retreat"],
+    ["gallery-arizona-bedroom.webp", "A serene Arizona bedroom with a desert mountain view", "Bedroom / desert light"],
+  ];
+  return `<section class="gallery-section" aria-labelledby="gallery-heading">
+    <div class="wrap">
+      <div class="gallery-section__heading" data-reveal><div><span class="eyebrow eyebrow--light">Gallery</span><h2 id="gallery-heading">Spaces with a sense of place.</h2></div><p>Generated concept imagery for the interiors and settings surrounding an Arizona residence.</p></div>
+      <div class="gallery-carousel" data-gallery>
+        <div class="gallery-carousel__viewport" data-gallery-viewport tabindex="0" aria-label="Arizona residence gallery">
+          <div class="gallery-carousel__track">${slides.map(([file, alt, caption], index) => `<figure class="gallery-slide" data-gallery-slide><img src="/assets/images/generated/${file}" width="1448" height="1086" alt="${alt}" loading="lazy" /><figcaption><span>${String(index + 1).padStart(2, "0")}</span>${caption}</figcaption></figure>`).join("")}</div>
+        </div>
+        <div class="gallery-carousel__controls"><span class="gallery-carousel__status" data-gallery-status aria-live="polite">01 / ${String(slides.length).padStart(2, "0")}</span><div><button type="button" data-gallery-prev aria-label="Previous gallery image" disabled>← <span>Previous</span></button><button type="button" data-gallery-next aria-label="Next gallery image"> <span>Next</span> →</button></div></div>
+      </div>
+    </div>
+  </section>`;
+}
+
 export function htmlDocument({ title, description, path, body, overlayHeader = false, preloadImage = "", noindex = false }) {
   const canonical = `https://thehomewatchagency.com${path}`;
   const structuredData = JSON.stringify({

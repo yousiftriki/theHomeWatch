@@ -56,6 +56,7 @@ const imagePaths = [
   "fountain-hills-estate-overlook.webp", "fountain-hills-luxury-estate.webp", "paradise-valley-estate-arrival.webp",
   "paradise-valley-estate-pool.webp", "private-estate-gated-entry.webp", "scottsdale-estate-driveway.webp",
   "scottsdale-estate-entry.webp", "scottsdale-estate-pool-sunset.webp",
+  "gallery-arizona-great-room.webp", "gallery-arizona-bathroom.webp", "gallery-arizona-bedroom.webp",
 ];
 for (const image of imagePaths) {
   const info = await stat(path.join(distRoot, "assets/images/generated", image));

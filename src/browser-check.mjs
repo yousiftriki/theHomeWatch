@@ -113,6 +113,22 @@ const contactState = await evaluate(`(() => {
 })()`);
 if (contactState.count !== "4" || contactState.max !== 350 || contactState.fields !== 4) failures.push("Contact form enhancement did not match the preserved field set");
 
+activeRoute = "gallery interactions";
+await command("Page.navigate", { url: "http://127.0.0.1:4173/" });
+await new Promise((resolve) => setTimeout(resolve, 200));
+const galleryState = await evaluate(`(() => {
+  const gallery = document.querySelector("[data-gallery]");
+  const viewport = gallery?.querySelector("[data-gallery-viewport]");
+  const slides = gallery?.querySelectorAll("[data-gallery-slide]");
+  const next = gallery?.querySelector("[data-gallery-next]");
+  return { present: Boolean(gallery && viewport && next), slides: slides?.length || 0, initial: gallery?.querySelector("[data-gallery-status]")?.textContent };
+})()`);
+if (!galleryState.present || galleryState.slides !== 3 || galleryState.initial !== "01 / 03") failures.push("Gallery carousel structure or initial status is incorrect");
+await evaluate(`document.querySelector("[data-gallery-next]")?.click(); true`);
+await new Promise((resolve) => setTimeout(resolve, 700));
+const galleryAfterNext = await evaluate(`document.querySelector("[data-gallery-status]")?.textContent`);
+if (galleryAfterNext !== "02 / 03") failures.push(`Gallery next control did not advance (status: ${galleryAfterNext})`);
+
 socket.close();
 if (runtimeErrors.length) failures.push(...runtimeErrors);
 if (failures.length) {

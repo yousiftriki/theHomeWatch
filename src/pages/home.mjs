@@ -1,6 +1,7 @@
 import {
   button,
   consultationCta,
+  galleryCarousel,
   htmlDocument,
   sectionHeading,
   serviceIndex,
@@ -42,6 +43,8 @@ export function homePage() {
         <span class="image-note">Concept imagery · replace with licensed final photography</span>
       </div>
     </section>
+
+    ${galleryCarousel()}
 
     <section class="services-showcase">
       <div class="wrap">

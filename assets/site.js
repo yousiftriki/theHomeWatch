@@ -83,6 +83,42 @@
     revealTargets.forEach((target) => observer.observe(target));
   }
 
+  document.querySelectorAll("[data-gallery]").forEach((gallery) => {
+    const viewport = gallery.querySelector("[data-gallery-viewport]");
+    const slides = [...gallery.querySelectorAll("[data-gallery-slide]")];
+    const previous = gallery.querySelector("[data-gallery-prev]");
+    const next = gallery.querySelector("[data-gallery-next]");
+    const status = gallery.querySelector("[data-gallery-status]");
+    if (!viewport || !slides.length) return;
+    let raf;
+    const currentIndex = () => {
+      const first = slides[0].getBoundingClientRect().width;
+      const gap = Number.parseFloat(getComputedStyle(slides[0].parentElement).columnGap) || 0;
+      return Math.max(0, Math.min(slides.length - 1, Math.round(viewport.scrollLeft / (first + gap))));
+    };
+    const update = () => {
+      const index = currentIndex();
+      if (status) status.textContent = `${String(index + 1).padStart(2, "0")} / ${String(slides.length).padStart(2, "0")}`;
+      if (previous) previous.disabled = index === 0;
+      if (next) next.disabled = index === slides.length - 1;
+    };
+    const move = (direction) => {
+      const index = Math.max(0, Math.min(slides.length - 1, currentIndex() + direction));
+      slides[index].scrollIntoView({ behavior: motionAllowed ? "smooth" : "auto", block: "nearest", inline: "start" });
+    };
+    previous?.addEventListener("click", () => move(-1));
+    next?.addEventListener("click", () => move(1));
+    viewport.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft") { event.preventDefault(); move(-1); }
+      if (event.key === "ArrowRight") { event.preventDefault(); move(1); }
+    });
+    viewport.addEventListener("scroll", () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(update);
+    }, { passive: true });
+    update();
+  });
+
   const message = document.querySelector("#message");
   const characterCount = document.querySelector("[data-character-count]");
   if (message && characterCount) {

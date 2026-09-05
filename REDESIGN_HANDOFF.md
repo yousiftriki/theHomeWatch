@@ -15,6 +15,7 @@ The redesign positions The Home Watch Agency between editorial architecture, pri
 - Pricing, Contact, client offers, presentation gates, Blog, Arriving Soon: `src/pages/misc.mjs`
 - Site-wide responsive design system: `assets/styles.css`
 - Navigation, reduced-motion-aware reveals, and form enhancements: `assets/site.js`
+- Homepage interior gallery carousel with touch, keyboard, and reduced-motion support: `src/components.mjs`, `assets/site.js`, `assets/styles.css`
 - Build, static preview, and automated checks: `src/build.mjs`, `src/serve.mjs`, `src/check.mjs`, `src/browser-check.mjs`, and `src/visual-check.mjs`
 - Public route output: `dist/`
 
@@ -45,6 +46,11 @@ The refreshed collection supplied for the demo is normalized to descriptive file
 | `assets/images/generated/scottsdale-estate-driveway.webp` | Vehicle-services imagery using the visible garage/arrival context |
 | `assets/images/generated/scottsdale-estate-entry.webp` | Pricing and FAQ imagery |
 | `assets/images/generated/scottsdale-estate-pool-sunset.webp` | Concierge, lifestyle, and editorial imagery |
+| `assets/images/generated/gallery-arizona-great-room.webp` | Homepage gallery: great room and mountain outlook |
+| `assets/images/generated/gallery-arizona-bathroom.webp` | Homepage gallery: limestone spa bathroom |
+| `assets/images/generated/gallery-arizona-bedroom.webp` | Homepage gallery: bedroom and desert light |
+
+The three gallery assets above are the unique interior concepts recently supplied for the homepage. The duplicate source file `gallery-arizona-great-room-detail.png` is retained locally for reference but is intentionally not served as a second, redundant slide.
 
 Recommended additional authentic assets before production:
 
