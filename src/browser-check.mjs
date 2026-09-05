@@ -80,6 +80,8 @@ await new Promise((resolve) => setTimeout(resolve, 200));
 const mobileMenuState = await evaluate(`(() => {
   const toggle = document.querySelector("[data-menu-toggle]");
   const menu = document.querySelector("[data-mobile-menu]");
+  window.scrollTo(0, 900);
+  window.dispatchEvent(new Event("scroll"));
   toggle.click();
   const opened = toggle.getAttribute("aria-expanded") === "true" && !menu.hidden && document.body.classList.contains("menu-open");
   toggle.click();
