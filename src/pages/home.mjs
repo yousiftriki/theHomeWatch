@@ -40,7 +40,6 @@ export function homePage() {
       </div>
       <div class="intro-editorial__image image-frame" data-reveal>
         <img src="/assets/images/generated/gallery-arizona-great-room.webp" width="1448" height="1086" alt="Generated concept image of an Arizona great room with floor-to-ceiling mountain views" loading="lazy" />
-        <span class="image-note">Concept imagery · replace with licensed final photography</span>
       </div>
     </section>
 
@@ -105,7 +104,6 @@ export function homePage() {
       <div class="wrap family-preview__grid">
         <div class="family-preview__image image-frame" data-reveal>
           <img src="/assets/images/authentic/principals-rocky-point.webp" width="571" height="571" alt="Christine, Andrew, and their family" loading="lazy" />
-          <span class="image-note image-note--authentic">Authentic client-supplied principal and family photography</span>
         </div>
         <div class="family-preview__copy" data-reveal>
           <span class="eyebrow">Our Story</span>

@@ -106,7 +106,6 @@ export function basicServicePage() {
     breakImage: {
       src: "/assets/images/generated/paradise-valley-estate-arrival.webp",
       alt: "Generated concept image of a carefully illuminated Paradise Valley estate arrival",
-      caption: "Concept imagery · not documentary evidence of a client property or service visit",
       position: "center",
     },
     items: [
@@ -148,7 +147,6 @@ export function personalizedServicePage() {
     breakImage: {
       src: "/assets/images/generated/scottsdale-estate-pool-sunset.webp",
       alt: "Generated concept image of a resort-like Scottsdale estate prepared for sunset",
-      caption: "Concept imagery · replace with professionally licensed final lifestyle photography",
       position: "center",
     },
     items: [

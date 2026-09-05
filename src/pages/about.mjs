@@ -35,7 +35,6 @@ export function aboutPage() {
       <div class="wrap relationship-editorial__grid">
         <div class="relationship-editorial__image image-frame" data-reveal>
           <img src="/assets/images/authentic/principals-rocky-point.webp" width="571" height="571" alt="Christine, Andrew, and their family" loading="lazy" />
-          <span class="image-note image-note--authentic">Authentic principal and family photography</span>
         </div>
         <div class="relationship-editorial__copy" data-reveal>
           <span class="eyebrow">Relationships</span>
@@ -103,7 +102,6 @@ export function aboutPage() {
     ${imageBreak({
       src: "/assets/images/generated/scottsdale-estate-pool-sunset.webp",
       alt: "Generated concept image of a Scottsdale estate pool and mountain sunset",
-      caption: "Concept imagery · replace with professionally licensed or approved final photography",
       position: "center",
     })}
 
@@ -111,7 +109,7 @@ export function aboutPage() {
       <div class="wrap">
         <header class="team-section__heading" data-reveal><span class="eyebrow">Our Team / Principals</span><h2>Meet Christine &amp; Andrew</h2></header>
         <div class="team-section__grid">
-          <figure class="team-section__portrait image-frame" data-reveal><img src="/assets/images/authentic/principals-rocky-point.webp" width="571" height="571" alt="Christine and Andrew with their family" loading="lazy" /><figcaption>Authentic photograph from the current The Home Watch Agency website.</figcaption></figure>
+          <figure class="team-section__portrait image-frame" data-reveal><img src="/assets/images/authentic/principals-rocky-point.webp" width="571" height="571" alt="Christine and Andrew with their family" loading="lazy" /></figure>
           <div class="team-section__bios prose" data-reveal>
             <h3>Christine</h3>
             <p>Christine founded The Home Watch Agency to meet the needs and challenges she discovered as a seasonal homeowner in Gainey Ranch. Today, she and her family reside in Scottsdale, Arizona and are deep-rooted and actively involved in the community via their church, sports, and the local theater in Scottsdale and Phoenix.</p>
