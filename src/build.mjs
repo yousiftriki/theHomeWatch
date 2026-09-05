@@ -56,6 +56,7 @@ const assets = [
   "styles.css",
   "site.js",
   "images/authentic/thwa-logo.png",
+  "images/authentic/thwa-white-logo.png",
   "images/authentic/thwa-favicon.png",
   "images/authentic/principals-rocky-point.webp",
   "images/authentic/gps-client-reporting.webp",
