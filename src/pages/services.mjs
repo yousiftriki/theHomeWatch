@@ -174,8 +174,8 @@ export function vehicleServicePage() {
     eyebrow: "Private Vehicle Care",
     title: "Vehicle Services",
     intro: "Maintenance, exercising, valet, shipping, and brokerage support for vehicles that remain in the desert while you are away.",
-    image: "/assets/images/generated/scottsdale-estate-driveway.webp",
-    alt: "Generated concept image of an illuminated Scottsdale estate driveway and garage",
+    image: "/assets/images/generated/car-img.webp",
+    alt: "Luxury vehicle prepared for service in an Arizona garage",
     leadTitle: "Our services don’t end with your home.",
     note: "Keeping your vehicles properly maintained, charged, and exercised is critical in the desert.",
     paragraphs: [

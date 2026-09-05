@@ -34,8 +34,8 @@ export const services = [
     title: "Vehicle Services",
     shortTitle: "Vehicle Care",
     href: "/services/vehicle/",
-    image: "/assets/images/generated/scottsdale-estate-driveway.webp",
-    alt: "Generated concept image of an illuminated Scottsdale estate driveway and garage",
+    image: "/assets/images/generated/car-img.webp",
+    alt: "Luxury vehicle prepared for service in an Arizona garage",
     text: "Our services don’t end with your home. We assist with vehicle maintenance, exercising, valet, shipping, and brokerage, including luxury cars, exotics, motorcycles, off-road vehicles, golf carts, and boats.",
   },
   {

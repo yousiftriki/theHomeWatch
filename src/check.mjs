@@ -54,7 +54,7 @@ for (const route of routes) {
 const imagePaths = [
   "arizona-luxury-estate-hero.webp", "arizona-luxury-estate-sunset.webp", "arizona-estate-arrival-palms.webp",
   "fountain-hills-estate-overlook.webp", "fountain-hills-luxury-estate.webp", "paradise-valley-estate-arrival.webp",
-  "paradise-valley-estate-pool.webp", "private-estate-gated-entry.webp", "scottsdale-estate-driveway.webp",
+  "paradise-valley-estate-pool.webp", "private-estate-gated-entry.webp", "scottsdale-estate-driveway.webp", "car-img.webp",
   "scottsdale-estate-entry.webp", "scottsdale-estate-pool-sunset.webp",
   "gallery-arizona-great-room.webp", "gallery-arizona-bathroom.webp", "gallery-arizona-bedroom.webp",
 ];
