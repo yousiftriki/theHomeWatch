@@ -119,7 +119,7 @@ const faqs = [
 ];
 
 function faqItems() {
-  return faqs.map((faq, index) => `<details class="faq-item"${index === 0 ? " open" : ""} data-reveal>
+  return faqs.map((faq, index) => `<details class="faq-item" name="faq"${index === 0 ? " open" : ""} data-reveal>
     <summary><span>${String(index + 1).padStart(2, "0")}</span><h3>${faq.question}</h3><i aria-hidden="true"></i></summary>
     <div class="faq-item__answer prose">${faq.answer.map((answer) => `<p>${answer}</p>`).join("")}${faq.link ? `<p><a class="text-link" href="${faq.link[1]}">${faq.link[0]}<svg aria-hidden="true" viewBox="0 0 20 20"><path d="M3 10h13M11 5l5 5-5 5"/></svg></a></p>` : ""}</div>
   </details>`).join("");
@@ -137,7 +137,7 @@ export function faqPage() {
     })}
     <section class="concerns-section">
       <div class="wrap concerns-section__grid">
-        <div data-reveal><span class="eyebrow">Client Concerns / Requests</span><h2>The questions that follow you when you leave.</h2></div>
+        <div data-reveal><h2>Client Concerns / Requests</h2><p class="section-tagline section-tagline--light">The questions that follow you when you leave.</p></div>
         <ul data-reveal>${concerns.map((concern) => `<li>${concern}</li>`).join("")}</ul>
       </div>
     </section>

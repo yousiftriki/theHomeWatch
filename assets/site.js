@@ -1,4 +1,16 @@
 (() => {
+  const scrollToHash = () => {
+    if (!location.hash) return;
+    const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    target?.scrollIntoView({ block: "start" });
+  };
+  scrollToHash();
+
+  window.addEventListener("load", () => {
+    scrollToHash();
+    document.documentElement.classList.add("smooth-scroll");
+  });
+
   const header = document.querySelector("[data-site-header]");
   const menuToggle = document.querySelector("[data-menu-toggle]");
   const mobileMenu = document.querySelector("[data-mobile-menu]");

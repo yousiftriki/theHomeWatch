@@ -99,6 +99,7 @@ export function benefitsPage() {
           eyebrow: "Homeowner Benefits",
           title: "Comprehensive attention to the property around you.",
           intro: "Recurring, comprehensive, and personalized in-home checks, essential maintenance, service-provider coordination, and vehicle management protect your property and provide peace of mind.",
+          promoteEyebrow: true,
         })}
         ${detailGrid(benefits, { numbered: true })}
       </div>
@@ -107,8 +108,8 @@ export function benefitsPage() {
     <section class="gps-section" id="gps">
       <div class="wrap gps-section__grid">
         <div class="gps-section__copy" data-reveal>
-          <span class="eyebrow">GPS-Enabled Client Reporting</span>
-          <h2>On-site reporting, documented.</h2>
+          <h2>GPS-Enabled Client Reporting</h2>
+          <p class="section-tagline">On-site reporting, documented.</p>
           <div class="prose">
             <p>Our optional reporting application package provides detailed, up-to-the-minute reporting via GPS-enabled geofence technology. Clients can track the presence of the inspector at their residence and receive comprehensive reports with time stamps and pictures.</p>
             <h3>Certainty that your property is being visited</h3>

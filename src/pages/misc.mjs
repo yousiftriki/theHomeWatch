@@ -38,7 +38,7 @@ export function pricingPage() {
     })}
     <section class="pricing-intro">
       <div class="wrap pricing-intro__grid">
-        <div data-reveal><span class="eyebrow">Flexible Frequency Options</span><h2>Every home and client is unique.</h2></div>
+        <div data-reveal><h2>Flexible Frequency Options</h2><p class="section-tagline">Every home and client is unique.</p></div>
         <div class="prose" data-reveal>
           <p>We understand that every home and client is unique as it relates to size, needs, frequency, and complexity. We intentionally structured our agreements and pay schedule so clients pay only for services needed and utilized, with control and flexibility over the frequency of visits.</p>
           <p>Home Watch visits and other services can be put on hold and recommenced at any time per client discretion with written notice. This allows for client savings when the property is occupied. A Customized Service Plan is prepared for each client and tailored to their needs in terms of services offered and frequency of Home Watch visits.</p>
@@ -49,7 +49,7 @@ export function pricingPage() {
     <section class="plan-options">
       <div class="wrap plan-options__grid">
         <div class="plan-options__visual" data-reveal><span class="eyebrow eyebrow--light">Service Plan Options</span><h2>À La Carte.<br />Custom.<br />Concierge.<br />Emergency.</h2></div>
-        <div class="prose" data-reveal>
+        <div class="prose prose--light" data-reveal>
           <p class="lead">Customizable services and plans are available for a variety of needs. Offerings can be provided during a scheduled Home Watch visit or at a separate off-cycle time.</p>
           <p>Examples include shopping, errands, appointment services, flower and gift delivery, appointment-waiting and key-holder services for cable installers, contractors, and furniture or freight deliveries; property-related upkeep; new flower planting; delivery acceptance; package, dry-cleaning, and prescription pick-up; and vehicle services.</p>
           <p>Regardless of the need, we will help find the solution. We assist our clients with a variety of requests and are willing to help as long as the request is not Illegal, Immoral, or Unethical.</p>
@@ -91,8 +91,8 @@ export function contactPage() {
     <section class="contact-section">
       <div class="wrap contact-section__grid">
         <div class="contact-section__details" data-reveal>
-          <span class="eyebrow">Contact Information</span>
-          <h2>A private conversation begins here.</h2>
+          <h2>Contact Information</h2>
+          <p class="section-tagline">A private conversation begins here.</p>
           <p>We have been working with exclusive clients for 25+ years and understand your unique needs. We built our agency upon the values most important to you: discretion, privacy, respect, accountability, communication, and above all, trust.</p>
           <address>
             <strong>The Home Watch Agency</strong><br />
@@ -139,7 +139,7 @@ export function clientOffersPage() {
       alt: "Generated concept image of a serene Fountain Hills estate overlooking the desert",
     })}
     <section class="presentation-index"><div class="wrap">
-      ${sectionHeading({ eyebrow: "Service Details & Presentations", title: "A complete view of our client offering.", intro: "The presentation routes remain private and continue to require access through the current production website." })}
+      ${sectionHeading({ eyebrow: "Service Details & Presentations", title: "A complete view of our client offering.", intro: "The presentation routes remain private and continue to require access through the current production website.", promoteEyebrow: true })}
       <div class="presentation-index__grid">${cards}</div>
       <div class="presentation-faq" data-reveal><h2>Frequently Asked Questions Presentation</h2><p>Access the existing private FAQ presentation route or view the full public FAQ page.</p><div>${button("Public FAQs", "/faqs/", "outline")}${button("Private Presentation", "/faq-pr/", "line")}</div></div>
     </div></section>

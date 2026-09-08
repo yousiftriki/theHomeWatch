@@ -67,14 +67,24 @@ const benefitLinks = [
   ["Frequently Asked Questions", "/faqs/"],
 ];
 
-const serviceLinks = [
-  ["Services Overview", "/services/"],
-  ["Basic Home Watch", "/services/basic/"],
-  ["Home / Estate Management", "/services/personalized/"],
-  ["Vehicle Services", "/services/vehicle/"],
-  ["Concierge Services", "/services/concierge/"],
+// Mirrors the live site's three-level Services navigation exactly (verified against
+// https://thehomewatchagency.com/ desktop flyout + mobile accordion): Overview (in-page
+// anchors on /services/), Service Details (dedicated pages), and Client Services Offers
+// (password-gated presentations). These are three distinct groups, not interchangeable.
+const serviceOverviewLinks = [
+  ["Basic", "/services/#basic"],
+  ["Supplementary", "/services/#supplementary"],
+  ["Vehicle", "/services/#vehicle"],
+  ["Concierge", "/services/#concierge"],
   ["Pricing", "/pricing/"],
-  ["Client Presentations", "/client-services-offers/"],
+];
+
+const serviceDetailLinks = [
+  ["Basic", "/services/basic/"],
+  ["Supplementary", "/services/personalized/"],
+  ["Vehicle", "/services/vehicle/"],
+  ["Concierge", "/services/concierge/"],
+  ["Pricing", "/pricing/"],
 ];
 
 const presentationLinks = [
@@ -83,6 +93,22 @@ const presentationLinks = [
   ["Vehicle Presentation", "/client-services-offers/vehicle-pr/"],
   ["Concierge Presentation", "/client-services-offers/concierge-pr/"],
   ["FAQ Presentation", "/faq-pr/"],
+];
+
+const serviceGroups = [
+  { label: "Overview", href: "/services/#overview", links: serviceOverviewLinks },
+  { label: "Service Details", href: "/services/", links: serviceDetailLinks },
+  { label: "Client Services Offers", href: "/client-services-offers/", links: presentationLinks },
+];
+
+// Flat, descriptive variant for the footer's utility link list (not a navigation-hierarchy view).
+const footerServiceLinks = [
+  ["Services Overview", "/services/"],
+  ["Basic Home Watch", "/services/basic/"],
+  ["Home / Estate Management", "/services/personalized/"],
+  ["Vehicle Services", "/services/vehicle/"],
+  ["Concierge Services", "/services/concierge/"],
+  ["Pricing", "/pricing/"],
 ];
 
 const arrow = `<svg aria-hidden="true" viewBox="0 0 20 20"><path d="M3 10h13M11 5l5 5-5 5"/></svg>`;
@@ -111,6 +137,46 @@ function desktopMenu(label, id, links, feature) {
   </div>`;
 }
 
+// Grouped variant for Services: preserves the live site's three-level hierarchy
+// (Overview / Service Details / Client Services Offers) as three distinct, labeled
+// columns instead of one flat list.
+function desktopGroupedMenu(label, id, groups, feature) {
+  const groupMarkup = groups
+    .map(
+      (group) => `<div class="mega-menu__group">
+          <a class="mega-menu__group-title" href="${group.href}">${group.label}</a>
+          <ul>${group.links.map(([text, href]) => `<li><a href="${href}">${text}</a></li>`).join("")}</ul>
+        </div>`
+    )
+    .join("");
+  return `<div class="nav-item nav-item--has-menu">
+    <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="${id}" data-nav-trigger>
+      ${label}<svg aria-hidden="true" viewBox="0 0 12 8"><path d="m1 1 5 5 5-5"/></svg>
+    </button>
+    <div class="mega-menu mega-menu--grouped" id="${id}" data-nav-menu>
+      <div class="mega-menu__inner">
+        <div class="mega-menu__intro">
+          <span class="eyebrow">${feature.eyebrow}</span>
+          <p>${feature.text}</p>
+          <a class="text-link" href="${feature.href}">${feature.action}${arrow}</a>
+        </div>
+        <div class="mega-menu__groups">${groupMarkup}</div>
+      </div>
+    </div>
+  </div>`;
+}
+
+// True nested accordion for mobile: opening "Services" reveals the three group
+// summaries; opening a group reveals only that group's own children.
+function mobileNestedGroup(label, groups) {
+  const groupMarkup = groups
+    .map(
+      (group) => `<details class="mobile-submenu__group"><summary>${group.label}</summary>${linkList(group.links)}</details>`
+    )
+    .join("");
+  return `<details><summary>${label}</summary><div class="mobile-submenu">${groupMarkup}</div></details>`;
+}
+
 export function header({ overlay = false } = {}) {
   return `<a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header${overlay ? " site-header--overlay" : ""}" data-site-header>
@@ -133,7 +199,7 @@ export function header({ overlay = false } = {}) {
           href: "/benefits/",
           action: "Explore the benefits",
         })}
-        ${desktopMenu("Services", "services-menu", serviceLinks, {
+        ${desktopGroupedMenu("Services", "services-menu", serviceGroups, {
           eyebrow: "Private Property Care",
           text: "Home watch, estate management, vehicle care, and personalized concierge services.",
           href: "/services/",
@@ -151,8 +217,7 @@ export function header({ overlay = false } = {}) {
         <a class="mobile-menu__primary" href="/">Home</a>
         <details><summary>About</summary>${linkList([["About Overview", "/about/"], ...aboutLinks])}</details>
         <details><summary>Benefits</summary>${linkList([["Benefits Overview", "/benefits/"], ...benefitLinks])}</details>
-        <details><summary>Services</summary>${linkList(serviceLinks)}</details>
-        <details><summary>Private Presentations</summary>${linkList(presentationLinks)}</details>
+        ${mobileNestedGroup("Services", serviceGroups)}
         <a class="mobile-menu__primary" href="/faqs/">FAQs</a>
         <a class="mobile-menu__primary" href="/blog/">Blog</a>
         <a class="button button--fill mobile-menu__cta" href="/contact/">Schedule Your Consultation</a>
@@ -177,7 +242,7 @@ export function footer() {
         <p>Comprehensive Home Watch Services, Personalized Concierge Services, Vehicle Care Services, and Estate Management.</p>
         <address>${contact.city}<br /><a href="${phoneHref}">${contact.phone}</a><br /><a href="${emailHref}">${contact.email}</a></address>
       </div>
-      <div><h3>Services</h3>${linkList(serviceLinks.slice(0, 6), "footer-links")}</div>
+      <div><h3>Services</h3>${linkList(footerServiceLinks, "footer-links")}</div>
       <div><h3>The Agency</h3>${linkList([
         ["About", "/about/"], ["Benefits", "/benefits/"], ["FAQs", "/faqs/"], ["Pricing", "/pricing/"], ["Blog", "/blog/"], ["Contact", "/contact/"]
       ], "footer-links")}</div>
@@ -206,9 +271,12 @@ export function pageHero({ eyebrow, title, intro, image, alt, align = "bottom", 
   </section>`;
 }
 
-export function sectionHeading({ eyebrow, title, intro = "", align = "left" }) {
+export function sectionHeading({ eyebrow, title, intro = "", align = "left", promoteEyebrow = false }) {
+  const heading = promoteEyebrow
+    ? `<h2>${eyebrow}</h2><p class="section-tagline">${title}</p>`
+    : `<span class="eyebrow">${eyebrow}</span><h2>${title}</h2>`;
   return `<header class="section-heading section-heading--${align}" data-reveal>
-    <span class="eyebrow">${eyebrow}</span><h2>${title}</h2>${intro ? `<p>${intro}</p>` : ""}
+    ${heading}${intro ? `<p>${intro}</p>` : ""}
   </header>`;
 }
 
@@ -243,8 +311,11 @@ export function consultationCta() {
 }
 
 export function longformSection({ id = "", eyebrow = "", title, paragraphs = [], aside = "", dark = false, className = "" }) {
+  const heading = eyebrow
+    ? `<h2>${eyebrow}</h2><p class="section-tagline${dark ? " section-tagline--light" : ""}">${title}</p>`
+    : `<h2>${title}</h2>`;
   return `<section ${id ? `id="${id}"` : ""} class="longform-section${dark ? " longform-section--dark" : ""} ${className}"><div class="wrap longform-section__grid">
-    <div class="longform-section__title" data-reveal>${eyebrow ? `<span class="eyebrow${dark ? " eyebrow--light" : ""}">${eyebrow}</span>` : ""}<h2>${title}</h2>${aside ? `<blockquote>${aside}</blockquote>` : ""}</div>
+    <div class="longform-section__title" data-reveal>${heading}${aside ? `<blockquote>${aside}</blockquote>` : ""}</div>
     <div class="prose" data-reveal>${paragraphs.map((p) => `<p>${p}</p>`).join("")}</div>
   </div></section>`;
 }
@@ -316,4 +387,4 @@ export function htmlDocument({ title, description, path, body, overlayHeader = f
 </html>`;
 }
 
-export const navData = { aboutLinks, benefitLinks, serviceLinks, presentationLinks };
+export const navData = { aboutLinks, benefitLinks, serviceGroups, presentationLinks };

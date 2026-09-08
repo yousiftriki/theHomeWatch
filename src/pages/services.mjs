@@ -31,6 +31,7 @@ export function servicesPage() {
           eyebrow: "Service Overview",
           title: "Recurring, comprehensive, and personalized.",
           intro: "In-home monitoring, essential maintenance, coordination of service providers, concierge support, and vehicle management services that protect your property and provide peace of mind.",
+          promoteEyebrow: true,
         })}
         ${serviceIndex()}
       </div>
@@ -72,7 +73,7 @@ function serviceDetailPage({ path, eyebrow, title, intro, image, alt, leadTitle,
       <div class="center-cta" data-reveal>${button("Review Service Plan Options", "/pricing/", "outline")}</div>
     </div></section>
     <section class="related-services"><div class="wrap">
-      ${sectionHeading({ eyebrow: "Available Services", title: "A complete relationship around your property.", intro: sharedServiceIntro })}
+      ${sectionHeading({ eyebrow: "Available Services", title: "A complete relationship around your property.", intro: sharedServiceIntro, promoteEyebrow: true })}
       ${serviceIndex({ compact: true })}
     </div></section>
     ${consultationCta()}

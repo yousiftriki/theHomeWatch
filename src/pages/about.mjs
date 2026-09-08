@@ -37,8 +37,8 @@ export function aboutPage() {
           <img src="/assets/images/authentic/principals-rocky-point.webp" width="571" height="571" alt="Christine, Andrew, and their family" loading="lazy" />
         </div>
         <div class="relationship-editorial__copy" data-reveal>
-          <span class="eyebrow">Relationships</span>
-          <h2>Holistic. Transparent. Personal.</h2>
+          <h2>Relationships</h2>
+          <p class="section-tagline">Holistic. Transparent. Personal.</p>
           <div class="prose">
             <p>One of the most crucial elements of our company is developing a holistic and transparent relationship with our clients and their loved ones to ensure a thorough understanding of their residence, personal preferences, and unique needs which oftentimes go well beyond Home Watch and basic concierge services.</p>
             <h3>Trust</h3>
@@ -67,8 +67,8 @@ export function aboutPage() {
       </div>
       <div class="wrap areas-editorial__content">
         <div data-reveal>
-          <span class="eyebrow eyebrow--light">Our Clients &amp; Areas of Service</span>
-          <h2>Local knowledge. Select relationships.</h2>
+          <h2>Our Clients &amp; Areas of Service</h2>
+          <p class="section-tagline section-tagline--light">Local knowledge. Select relationships.</p>
         </div>
         <div class="prose prose--light" data-reveal>
           <p>The Home Watch Agency proudly and discreetly serves a select client base within the high-end residential and client space of Scottsdale, North Scottsdale, Paradise Valley, Biltmore, Arcadia, Fountain Hills, Phoenix, inter alia.</p>
@@ -107,7 +107,7 @@ export function aboutPage() {
 
     <section class="team-section" id="ourteam">
       <div class="wrap">
-        <header class="team-section__heading" data-reveal><span class="eyebrow">Our Team / Principals</span><h2>Meet Christine &amp; Andrew</h2></header>
+        <header class="team-section__heading" data-reveal><h2>Our Team / Principals</h2><p class="section-tagline">Meet Christine &amp; Andrew</p></header>
         <div class="team-section__grid">
           <figure class="team-section__portrait image-frame" data-reveal><img src="/assets/images/authentic/principals-rocky-point.webp" width="571" height="571" alt="Christine and Andrew with their family" loading="lazy" /></figure>
           <div class="team-section__bios prose" data-reveal>
@@ -127,7 +127,7 @@ export function aboutPage() {
 
     <section class="training-section" id="training">
       <div class="wrap training-section__grid">
-        <div class="training-section__title" data-reveal><span class="eyebrow">Professional Training &amp; Development</span><h2>Education as a foundation.</h2></div>
+        <div class="training-section__title" data-reveal><h2>Professional Training &amp; Development</h2><p class="section-tagline">Education as a foundation.</p></div>
         <div class="prose" data-reveal>
           <p class="lead">The most dedicated professionals build their business on a strong foundation of education. Homeowners seeking a trusted provider should choose a provider that makes training and regular education a priority.</p>
           <p>At The Home Watch Agency, we are focused on providing exceptional Home Watch, Concierge, Vehicle, and Estate Management Services to our clients. To help achieve this goal and enhance our expertise in the intricacies of home watch, we hold a graduate degree/accreditation from the Home Watch Academy and partake in regular continuing education in the field.</p>
@@ -139,7 +139,7 @@ export function aboutPage() {
 
     <section class="accreditation-section" id="accreditation">
       <div class="wrap">
-        <header data-reveal><span class="eyebrow">Accreditation / Affiliations</span><h2>Current-site credentials, preserved.</h2></header>
+        <header data-reveal><h2>Accreditation / Affiliations</h2><p class="section-tagline">Current-site credentials, preserved.</p></header>
         <div class="accreditation-grid" data-reveal>
           <div><img src="/assets/images/authentic/home-watch-academy.jpeg" alt="Home Watch Academy credential mark from the current site" loading="lazy" /></div>
           <div><img src="/assets/images/authentic/nhwa.jpeg" alt="National Home Watch Association mark from the current site" loading="lazy" /></div>
