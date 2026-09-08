@@ -271,10 +271,10 @@ export function pageHero({ eyebrow, title, intro, image, alt, align = "bottom", 
   </section>`;
 }
 
-export function sectionHeading({ eyebrow, title, intro = "", align = "left", promoteEyebrow = false }) {
+export function sectionHeading({ eyebrow, title, intro = "", align = "left", promoteEyebrow = false, eyebrowIsTitle = false }) {
   const heading = promoteEyebrow
     ? `<h2>${eyebrow}</h2><p class="section-tagline">${title}</p>`
-    : `<span class="eyebrow">${eyebrow}</span><h2>${title}</h2>`;
+    : `<span class="${eyebrowIsTitle ? "blue-section-title" : "eyebrow"}">${eyebrow}</span><h2>${title}</h2>`;
   return `<header class="section-heading section-heading--${align}" data-reveal>
     ${heading}${intro ? `<p>${intro}</p>` : ""}
   </header>`;

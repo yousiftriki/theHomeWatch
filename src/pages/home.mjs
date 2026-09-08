@@ -51,6 +51,7 @@ export function homePage() {
           eyebrow: "Our Services",
           title: "A proactive approach to Arizona home and estate care.",
           intro: "Recurring, comprehensive, and personalized in-home monitoring, essential maintenance, coordination of service providers, and vehicle management services that protect your property and provide peace of mind.",
+          eyebrowIsTitle: true,
         })}
         ${serviceIndex()}
       </div>
@@ -61,7 +62,7 @@ export function homePage() {
         <img src="/assets/images/generated/gallery-arizona-bedroom.webp" width="1448" height="1086" alt="Generated concept image of a serene Arizona bedroom with a desert mountain view" loading="lazy" />
       </div>
       <div class="model-editorial__content" data-reveal>
-        <span class="eyebrow">Our Service Model</span>
+        <span class="blue-section-title">Our Service Model</span>
         <h2>An intimate boutique firm.<br /><em>Quality over quantity.</em></h2>
         <div class="prose">
           <p>The Home Watch Agency is an intimate boutique firm with 25+ years of experience discreetly providing a comprehensive suite of Home Watch Monitoring Services, essential Home and Vehicle Care/Maintenance, and Personalized Concierge Services to an exclusive and discerning client base of active seasonal residents, absentee owners, and professionals within the high-end residential/client space of Scottsdale, Paradise Valley, Fountain Hills, and Phoenix (Biltmore/Arcadia).</p>
@@ -75,7 +76,7 @@ export function homePage() {
     <section class="principles-panel">
       <div class="wrap">
         <div class="principles-panel__heading" data-reveal>
-          <span class="eyebrow eyebrow--light">The Difference</span>
+          <span class="blue-section-title blue-section-title--light">The Difference</span>
           <h2>Discretion. Privacy. Respect.<br />Accountability. Communication.<br /><em>Above all, trust.</em></h2>
         </div>
         <div class="principles-panel__copy prose prose--light" data-reveal>
@@ -90,7 +91,7 @@ export function homePage() {
       <img src="/assets/images/generated/fountain-hills-estate-overlook.webp" width="1448" height="1086" alt="Generated concept image of a Fountain Hills estate overlooking the Sonoran Desert" loading="lazy" />
       <div class="service-area__veil"></div>
       <div class="service-area__content wrap" data-reveal>
-        <span class="eyebrow eyebrow--light">Our Clients &amp; Areas of Service</span>
+        <span class="blue-section-title blue-section-title--light">Our Clients &amp; Areas of Service</span>
         <h2>Arizona, attended to.</h2>
         <p>The Home Watch Agency proudly and discreetly serves a select client base within the high-end residential/client space of:</p>
         <ul aria-label="Primary service areas">
@@ -106,7 +107,7 @@ export function homePage() {
           <img src="/assets/images/authentic/principals-rocky-point.webp" width="571" height="571" alt="Christine, Andrew, and their family" loading="lazy" />
         </div>
         <div class="family-preview__copy" data-reveal>
-          <span class="eyebrow">Our Story</span>
+          <span class="blue-section-title">Our Story</span>
           <h2>Born from first-hand experience as seasonal Arizona homeowners.</h2>
           <div class="prose">
             <p>Before becoming full-time Scottsdale residents, our Principals split their time between Chicago and a part-time home in Scottsdale’s Gainey Ranch for over 20 years. Through this experience, they gained invaluable first-hand insight into the nuances of life, home, and vehicle ownership in the valley.</p>
