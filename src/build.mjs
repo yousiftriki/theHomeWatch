@@ -55,6 +55,7 @@ const pages = new Map([
 const assets = [
   "styles.css",
   "site.js",
+  "fonts/montserrat-700.woff2",
   "images/authentic/thwa-logo.png",
   "images/authentic/thwa-white-logo.png",
   "images/authentic/thwa-favicon.png",

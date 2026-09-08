@@ -13,12 +13,16 @@
   --line-light: rgba(255, 255, 255, 0.24);
   --serif: Georgia, "Times New Roman", Times, serif;
   --sans: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --accent-sans: "Montserrat", var(--sans);
   --wrap: min(88vw, 1440px);
   --reading: 720px;
   --header-h: 92px;
   --section: clamp(5.5rem, 10vw, 10rem);
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
+
+/* Self-hosted (SIL OFL licensed, no remote font dependency) — used sparingly as a geometric-sans accent on kicker/label text, not the primary type scheme. */
+@font-face { font-family: "Montserrat"; src: url("/assets/fonts/montserrat-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
 
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-padding-top: calc(var(--header-h) + 2rem); }
@@ -43,10 +47,10 @@ em { font-weight: 400; }
 :focus-visible { outline: 3px solid var(--accent-light); outline-offset: 4px; }
 ::selection { color: var(--white); background: var(--accent); }
 
-.eyebrow { display: inline-block; margin-bottom: 1.2rem; color: var(--accent); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.19em; line-height: 1.3; text-transform: uppercase; }
+.eyebrow { display: inline-block; margin-bottom: 1.2rem; color: var(--accent); font-family: var(--accent-sans); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.19em; line-height: 1.3; text-transform: uppercase; }
 .eyebrow--light { color: #a9ddef; }
 /* Blue text that IS the section's actual title (not a kicker above a larger heading) — bigger and bolder than .eyebrow but still a label, not an editorial h2. */
-.blue-section-title { display: block; margin-bottom: 1rem; color: var(--accent); font-family: var(--sans); font-size: clamp(1.5rem, 2.7vw, 2.65rem); font-weight: 700; letter-spacing: 0.02em; line-height: 1.15; text-transform: uppercase; }
+.blue-section-title { display: block; margin-bottom: 1rem; color: var(--accent); font-family: var(--accent-sans); font-size: clamp(1.5rem, 2.7vw, 2.65rem); font-weight: 700; letter-spacing: 0.02em; line-height: 1.15; text-transform: uppercase; }
 .blue-section-title--light { color: var(--accent-light); }
 /* Supporting phrase/tagline beneath a promoted section title (title = h2, this sits between it and body copy). */
 .section-tagline { max-width: 640px; margin: 0 0 1.5rem; color: var(--ink); font-family: var(--serif); font-weight: 400; font-size: clamp(1.5rem, 2.2vw, 2.35rem); line-height: 1.3; }
@@ -150,7 +154,7 @@ em { font-weight: 400; }
 .trust-band__grid > div { min-height: 150px; padding: 2.25rem 2rem; border-right: 1px solid rgba(255,255,255,.14); }
 .trust-band__grid > div:first-child { padding-left: 0; }
 .trust-band__grid > div:last-child { border: 0; }
-.trust-band span { color: var(--accent-light); font-size: .62rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.trust-band span { color: var(--accent-light); font-family: var(--accent-sans); font-size: .62rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
 .trust-band p { max-width: 230px; margin: .7rem 0 0; color: rgba(255,255,255,.78); font-family: var(--serif); font-size: 1.15rem; line-height: 1.35; }
 
 /* Shared editorial sections */
@@ -172,7 +176,7 @@ em { font-weight: 400; }
 .service-index__item:nth-child(even) { grid-template-columns: .7fr 1.3fr; }
 .service-index__item:nth-child(even) .service-index__image { order: 2; }
 .service-index__image { display: block; aspect-ratio: 1.42; }
-.service-number { display: block; margin-bottom: 3rem; color: var(--accent); font-size: .68rem; font-weight: 700; letter-spacing: .16em; }
+.service-number { display: block; margin-bottom: 3rem; color: var(--accent); font-family: var(--accent-sans); font-size: .68rem; font-weight: 700; letter-spacing: .16em; }
 .service-index__copy h3 { margin-bottom: 1.4rem; font-family: var(--serif); font-size: clamp(2.3rem, 4vw, 4.5rem); font-weight: 400; letter-spacing: -.03em; }
 .service-index__copy p { margin-bottom: 2rem; color: #585a58; }
 .service-index--compact { grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); }
@@ -291,7 +295,7 @@ em { font-weight: 400; }
 .benefits-detail, .service-detail-list, .related-services, .presentation-index { padding: var(--section) 0; background: var(--ivory); }
 .detail-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 5vw; border-top: 1px solid var(--line); }
 .detail-card { display: grid; min-height: 280px; grid-template-columns: 64px 1fr; align-content: start; padding: 2.5rem 0 3.5rem; border-bottom: 1px solid var(--line); }
-.detail-card__number { grid-row: 1 / span 2; color: var(--accent); font-size: .66rem; font-weight: 700; letter-spacing: .12em; }
+.detail-card__number { grid-row: 1 / span 2; color: var(--accent); font-family: var(--accent-sans); font-size: .66rem; font-weight: 700; letter-spacing: .12em; }
 .detail-card h3 { grid-column: 2; margin-bottom: 1rem; font-family: var(--serif); font-size: clamp(1.7rem, 2.4vw, 2.5rem); font-weight: 400; }
 .detail-card p { grid-column: 2; margin-bottom: .8rem; color: #595b58; font-size: .96rem; }
 .gps-section { padding: var(--section) 0; }
