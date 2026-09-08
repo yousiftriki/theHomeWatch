@@ -157,7 +157,7 @@ em { font-weight: 400; }
 .section-heading { display: grid; max-width: 1050px; grid-template-columns: minmax(260px, .6fr) minmax(480px, 1.4fr); column-gap: 5vw; margin-bottom: clamp(4rem, 7vw, 7rem); }
 .section-heading .eyebrow, .section-heading .blue-section-title { grid-column: 1; }
 .section-heading h2 { grid-column: 1 / -1; max-width: 1000px; margin-bottom: 1.5rem; }
-.section-heading p { grid-column: 2; max-width: 660px; margin: 0; color: #5a5c5a; }
+.section-heading p { grid-column: 1 / -1; max-width: 62ch; margin: 0; color: #5a5c5a; }
 .section-heading--center { display: block; margin-inline: auto; text-align: center; }
 
 .intro-editorial { padding: var(--section) 0; overflow: hidden; }
