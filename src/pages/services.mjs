@@ -38,10 +38,10 @@ export function servicesPage() {
     </section>
     <section class="service-summary-band">
       <div class="wrap service-summary-band__grid">
-        <div id="basic"><span>01</span><h3>Basic</h3><p>Recurring Home Watch Monitoring visits with comprehensive interior, exterior, and perimeter assessment.</p><a href="/services/basic/">View service</a></div>
-        <div id="supplementary"><span>02</span><h3>Supplementary</h3><p>Personalized Home and Estate Management services provided À La Carte.</p><a href="/services/personalized/">View service</a></div>
-        <div id="vehicle"><span>03</span><h3>Vehicle</h3><p>Maintenance, exercising, valet, shipping, transport assistance, and brokerage support.</p><a href="/services/vehicle/">View service</a></div>
-        <div id="concierge"><span>04</span><h3>Concierge</h3><p>An agile suite of personal services extending beyond home, estate, and vehicle care.</p><a href="/services/concierge/">View service</a></div>
+        <div id="basic"><span>01</span><h3>Basic</h3><p>Maintaining a residence and all of the related services can prove to be a time-consuming task, especially for individuals with busy professional schedules and multiple homes.</p><p>Each home watch visit for our seasonal/absentee homeowners entails a comprehensive assessment of the interior, exterior, and perimeter of the property to help ensure that your residence and vehicles are secure and being appropriately monitored, maintained, exercised, and ready for your return.</p><p>Our Basic Home Watch Monitoring service can be the difference between minor damage and a major disaster.</p><a href="/services/basic/">View service</a></div>
+        <div id="supplementary"><span>02</span><h3>Supplementary</h3><p>To complement our Basic Home Watch Monitoring Services, we offer a nimble and comprehensive suite of supplementary Personalized Home/Estate Management Services to appropriately manage, maintain, and care for your residence and the surrounding grounds.</p><p>These white-glove offerings go well beyond our home monitoring to provide owners with even greater levels of convenience and the ability to focus on other priorities.</p><a href="/services/personalized/">View service</a></div>
+        <div id="vehicle"><span>03</span><h3>Vehicle</h3><p>Our services don’t end with your home; we also assist with vehicle exercising, maintenance, valet, shipping, and brokerage. We have experience with luxury cars, exotics/supercars, motorcycles, off-road vehicles, golf carts, and boats.</p><a href="/services/vehicle/">View service</a></div>
+        <div id="concierge"><span>04</span><h3>Concierge</h3><p>For clients who need assistance with needs and personal affairs that extend beyond Basic Home Watch and Estate/Vehicle Management, we offer an agile suite of personalized Concierge Services. Regardless of the need, we will help find the solution.</p><a href="/services/concierge/">View service</a></div>
       </div>
     </section>
     ${consultationCta()}
@@ -119,10 +119,6 @@ export function basicServicePage() {
         text: "A full assessment of the exterior and applicable outdoor areas—including the yard, guest houses, ramadas, patios, pools and spas, water features, and outdoor furniture and décor—for apparent signs of damage, water intrusion, forced entry, maintenance and mechanical issues, or insect and rodent issues. Ask your Home Watch Agency representative for full detail.",
       },
       {
-        title: "Systems & Service Verification",
-        text: "Review of applicable appliances, cooling, heating, water, electrical and mechanical systems, and an additional layer of confirmation that scheduled service providers and vendors are performing obligations in accordance with your expectations.",
-      },
-      {
         title: "Before We Leave",
         text: "At the end of each visit, we return your residence into “away” / Home Watch Mode with an optional final report, including photos, sent for your review. Ask your Home Watch Agency representative for full detail.",
       },
@@ -161,7 +157,8 @@ export function personalizedServicePage() {
       { title: "Fresh Flower / Plant Replacement", text: "Purchase and pot fresh flowers or plants around the home to create a fresh look upon your arrival." },
       { title: "Seasonal Changeover Management", text: "Seasonal changeover management and outdoor furniture and décor care are available. Ask your representative for full detail." },
       { title: "Prolonged Absence Mitigation", text: "Services designed to mitigate visible signs and practical concerns associated with a prolonged absence. Ask your representative for full detail." },
-      { title: "Plant Watering & Trash / Recycling", text: "Water indoor or outdoor plants per client specifications and visit the property on appropriate days to transfer trash and recycling bins to or from the curb." },
+      { title: "Flower / Plant Watering", text: "Water indoor or outdoor plants per client specifications." },
+      { title: "Trash / Recycle Bin Service", text: "Visit the property on appropriate days to transfer trash and recycling bins to or from the curb." },
       { title: "Perishable Items Service", text: "Perishable-items service is available. Ask your representative for full detail." },
       { title: "Estate Management, Project Oversight & Vacation Rentals", text: "Full Estate Management is available for clients requiring a higher level of attention and property administration, with more frequent visits or complete estate management including coordination of vendors, errands, and property upkeep. This may be enhanced to include a dedicated full-time estate manager or a more permanent in-home caretaker scenario, subject to client need. Assistance with Vacation Rental properties may also be available for select clients." },
       { title: "Vendor Coordination / Project Management", text: "We can coordinate and manage services and projects via an extensive network of providers. We have assisted with renovation projects from start to finish, identification of quality tradespeople, and service as the primary liaison to help ensure timely completion. Coordination with existing vendor relationships is welcomed." },
